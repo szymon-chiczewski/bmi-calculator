@@ -1,0 +1,22 @@
+.result {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .result p {
+    margin: 0;
+  }
+  
+  .good-bmi {
+    color: green;
+  }
+  
+  .low-bmi {
+    color: red;
+  }
+
+  .high-bmi {
+    color: red;
+  }

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="div-container">
+    <form [formGroup]="bmiForm" (ngSubmit)="calculateBMI()">
+      <div class="parent-measurements">
+        <h3>Parent measurements</h3>
+        <mat-form-field>
+          <input matInput type="number" placeholder="Height (cm)" formControlName="parentHeight" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="number" placeholder="Weight (kg)" formControlName="parentWeight" required>
+        </mat-form-field>
+      </div>
+    
+      <div class="child-measurements">
+        <h3>Child measurements</h3>
+        <mat-form-field>
+          <input matInput type="number" placeholder="Height (cm)" formControlName="childHeight" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="number" placeholder="Weight (kg)" formControlName="childWeight" required>
+        </mat-form-field>
+      </div>
+    
+      <div class="button-container"><button mat-raised-button color="primary" type="submit">Calculate BMI</button></div>
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="result-container">
+    <app-bmi-result [bmi]="parentBmi" [child]="false"></app-bmi-result>
+    <app-bmi-result [bmi]="childBmi" [child]="true"></app-bmi-result>
+  </div>
+</div>
