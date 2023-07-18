@@ -1,20 +1,3 @@
-<!-- <div class="result" *ngIf="bmi">
-  <p *ngIf="!child">
-    Your BMI is: {{ bmi | number: '1.1-2' }}
-  </p>
-  <p *ngIf="child">
-    Your child's BMI is: {{ bmi | number: '1.1-2' }}
-  </p>
-  <p [ngClass]="{ 'good-bmi': bmi < 25, 'bad-bmi': bmi >= 25 }">
-    {{ child ? 'Child s BMI ' : 'Your BMI' }}
-    {{ bmi < 25 ? 'it s good (normal)' : 'is too high' }}
-  </p>
-   <p *ngIf="child && parentBmi">
-    Your child's BMI relative to yours is: {{ (bmi / parentBmi) | number: '1.1-2' }}
-  </p> 
-</div>
-   -->
-
    <div class="result" *ngIf="bmi">
     <p *ngIf="!child">
       Your BMI is: {{ bmi | number: '1.1-2' }}
